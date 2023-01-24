@@ -20,7 +20,8 @@ The solution expects:
 			- sends it to the server
 			- receives on/off commands from administrator
 		If a new simulated instance is required by administrator, the client:
-			- gets an identificator from server
+			- gets the quantity of drones actually registered into the database
+			- generate a new identificator
 			- generate a new operating device
 	- Another client side which acts as the system administrator
 		It can: 
@@ -30,12 +31,11 @@ The solution expects:
 	- A server side which store and retrieve datas from a database
 		It:
 			- receives datas from each active drone
-			- if this one isn't already registered:
-				- it includes it into database
-			- it stores them
+			- if this one is already registered:
+				- it stores them
+			- else:
+				- it includes a new device into database
+				- it stores them
 			- send them to administrator
 			- receives commands from the administrator
-			- if the command consists in making a new simulated device:
-				- it gets the quantity of drones already registered into the database
-				- generates an identificator
 			- send them to drone 
