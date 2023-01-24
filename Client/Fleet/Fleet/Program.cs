@@ -1,7 +1,12 @@
-﻿internal class Program
+﻿namespace Fleet
 {
-    private static void Main(string[] args)
+    internal class Program
     {
-        //Initializ
+        private static void Main(string[] args)
+        {
+            //List of drones inizialization
+            List<Drone> drones = new List<Drone>();
+
+        }
     }
 }
