@@ -5,8 +5,7 @@ The solution expects:
 	- A client side which simulates many drones
 		- Every drone is made up of:
 			- speed sensor 
-			- position sensor
-			- altitude sensor
+			- position sensor (three axes coordinates)
 			- battery sensor
 			- power on/off sensor
 			- clock
